@@ -21,11 +21,11 @@ module.exports = {
               sourceMap: true,
               modules: true,
               camelCase: true,
-              localIdentName: '[local]___[hash:base64:5]',
             },
           },
           'sass-loader',
         ],
+        exclude: commonPaths.cssFolder,
       },
     ],
   },
@@ -34,5 +34,7 @@ module.exports = {
     compress: true,
     hot: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
 };

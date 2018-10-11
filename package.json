@@ -1,7 +1,7 @@
 {
-  "name": "@HashemKhalifa/webpack-react-boilerplate",
+  "name": "@pkunchamwar/webpack-react-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate for react and webpack",
+  "description": "Formio React App",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
@@ -40,8 +40,8 @@
       "jsx"
     ]
   },
-  "repository": "https://github.com/HashemKhalifa/webpack-react-boilerplate",
-  "author": "HashemKhalifa",
+  "repository": "",
+  "author": "pkunchamwar",
   "license": "ISC",
   "private": false,
   "engines": {
@@ -54,7 +54,12 @@
     "prop-types": "15.6.2",
     "react": "16.5.2",
     "react-dom": "16.5.2",
-    "react-hot-loader": "4.3.11"
+    "react-hot-loader": "4.3.11",
+    "react-scripts": "2.0.4",
+    "recompose": "^0.30.0",
+    "redux-view": "^0.2.1",
+    "formiojs": "^3.6.5",
+    "@salesforce-ux/design-system": "^2.7.2"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
@@ -84,12 +89,14 @@
     "browserslist": "4.2.0",
     "clean-webpack-plugin": "0.1.19",
     "connect-history-api-fallback": "^1.5.0",
+    "copy-webpack-plugin": "^4.5.3",
     "cross-env": "5.2.0",
     "css-loader": "1.0.0",
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.6.0",
     "eslint": "5.6.1",
     "eslint-config-airbnb": "17.1.0",
+    "eslint-config-formio": "^1.1.4",
     "eslint-config-prettier": "3.1.0",
     "eslint-loader": "2.1.1",
     "eslint-plugin-import": "2.14.0",
@@ -98,6 +105,7 @@
     "eslint-plugin-prettier": "3.0.0",
     "eslint-plugin-react": "7.11.1",
     "eslint-watch": "4.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "2.0.0",
     "html-webpack-plugin": "3.2.0",
     "husky": "1.1.1",
@@ -117,7 +125,7 @@
     "style-loader": "0.23.1",
     "webpack": "4.20.2",
     "webpack-cli": "3.1.2",
-    "webpack-merge": "4.1.4",
-    "webpack-dev-server": "3.1.9"
+    "webpack-dev-server": "3.1.9",
+    "webpack-merge": "4.1.4"
   }
 }
